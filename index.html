@@ -237,11 +237,17 @@
 
     .service-card {
       border-right: 3px solid var(--dark);
+      border-bottom: 3px solid var(--dark);
       overflow: hidden;
       transition: background 0.2s;
     }
 
-    .service-card:last-child { border-right: none; }
+    .service-card:nth-child(3),
+    .service-card:nth-child(6) { border-right: none; }
+
+    .service-card:nth-child(4),
+    .service-card:nth-child(5),
+    .service-card:nth-child(6) { border-bottom: none; }
     .service-card:hover { background: var(--gray); }
 
     .service-img {
@@ -569,6 +575,8 @@
       .services, .projects { padding: 48px 20px; }
       .services-grid, .projects-grid { grid-template-columns: 1fr; }
       .service-card, .project-card { border-right: none; border-bottom: 3px solid var(--dark); }
+      .service-card:nth-child(3), .service-card:nth-child(6) { border-right: none; }
+      .service-card:nth-child(4), .service-card:nth-child(5) { border-bottom: 3px solid var(--dark); }
       .service-card:last-child, .project-card:last-child { border-bottom: none; }
       .why-stats { grid-template-columns: 1fr 1fr; }
       .contact-strip { padding: 48px 20px; flex-direction: column; align-items: flex-start; }
@@ -665,6 +673,30 @@
           <p>Obnova i restauracija fasada, istorijskih objekata i unutrašnjosti. Spajamo tradicionalne tehnike sa savremenim materijalima za dugotrajne rezultate.</p>
         </div>
       </div>
+      <div class="service-card">
+        <div class="service-img alt2"><span class="service-icon">🚿</span></div>
+        <div class="service-body">
+          <div class="service-num">04</div>
+          <h3>Vodovod</h3>
+          <p>Postavljanje i rekonstrukcija vodovodnih instalacija – od priključka do armature. Brza i pouzdana montaža sa garantovanim kvalitetom rada.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-img alt1"><span class="service-icon">🔧</span></div>
+        <div class="service-body">
+          <div class="service-num">05</div>
+          <h3>Kanalizacija</h3>
+          <p>Izgradnja i sanacija kanalizacionih mreža u stambenim i poslovnim objektima. Kvalitetni materijali i iskusni majstori za dugotrajno rešenje.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-img alt3"><span class="service-icon">⚡</span></div>
+        <div class="service-body">
+          <div class="service-num">06</div>
+          <h3>Električne Instalacije</h3>
+          <p>Kompletne električne instalacije, razvodni ormani, utičnice i rasveta. Radimo po važećim standardima uz izdavanje atesta i garanciju na izvedene radove.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -756,8 +788,9 @@
           <li><a href="#">Završni radovi</a></li>
           <li><a href="#">Sređivanje enterijera</a></li>
           <li><a href="#">Restauracija</a></li>
-          <li><a href="#">Fasaderski radovi</a></li>
-          <li><a href="#">Gips-karton radovi</a></li>
+          <li><a href="#">Vodovod</a></li>
+          <li><a href="#">Kanalizacija</a></li>
+          <li><a href="#">Električne instalacije</a></li>
         </ul>
       </div>
       <div class="footer-col">
